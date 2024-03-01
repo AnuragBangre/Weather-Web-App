@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skysync</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="head-container">
+    <span class="sky-head">sky</span><span class="sync-head">sync</span><span class="sky-head">.com</span>
+  </div>
+
+
+  <div class="search-container" id="navbarSupportedContent">
+    <form class="d-flex" role="search">
+      <input id="city" class="input-box" type="search" placeholder="Enter a City or Country" aria-label="Search">
+      <button class="search-button" type="submit" id="submit">Search</button>
+    </form>
+  </div>
+
+
+  <div class="info-container">
+    <h1 class="cityhead">Weather for <span id="cityname"></span></h1>
+    <main>
+      <div class="table">
+        
+        <div class="col">
+          <div class="card-header">
+            <h4 class="card-header-text">Wind</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="value-card-title"><span id="wind_speed2"> </span><small class="text-body-secondary">m/s</small>
+            </h1>
+            <ul class="list-unstyled">
+              <li>Wind Speed: <span id="wind_speed"> </span></li>
+              <li>Sunrise time: <span id="sunrise"> </span></li>
+              <li>Sunset time: <span id="sunset"> </span></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="card-header">
+            <h4 class="card-header-text">Temperature</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="value-card-title"><span id="temp2"> </span><small
+                class="text-body-secondary"><span>&#8451;</span></small>
+            </h1>
+            <ul class="list-unstyled">
+              <li>Temperature: <span id="temp"> </span></li>
+              <li>Min Temperature: <span id="min_temp"> </span></li>
+              <li>Max Temperature: <span id="max_temp"> </span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-header">
+            <h4 class="card-header-text">Humidity</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="value-card-title"><span id="humidity2"> </span><small class="text-body-secondary">%</small>
+            </h1>
+            <ul class="list-unstyled">
+              <li>Humidity: <span id="humidity"> </span></li>
+              <li>Feels Like: <span id="feels_like"> </span></li>
+              <li>Cloud Cover (in %): <span id="cloud_pct"> </span></li>
+            </ul>
+          </div>
+        </div>
+    </main>
+  </div>
+  </div>
+  <script src="script.js"></script> 
+</body>
+
+</html>
